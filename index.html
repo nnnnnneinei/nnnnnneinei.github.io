@@ -1,36 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <title>My Website</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 800px;
-            margin: 40px auto;
-            line-height: 1.6;
-        }
-        h1 {
-            text-align: center;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <title>Ziran (Neinei) Du | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Hello, world!</h1>
-    <p>This is my first website hosted on GitHub Pages.</p>
-    <section>
-    <h2>Projects</h2>
+    <!-- Simple navigation bar -->
+    <header class="site-header">
+        <h1>Ziran (Neinei) Du</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#projects">Projects</a>
+            <a href="#research">Research</a>
+            <a href="#publications">Publications</a>
+            <a href="#activities">Activities</a>
+        </nav>
+    </header>
 
-    <div style="border: 1px solid #ccc; padding: 15px; margin: 10px 0;">
-        <h3>My First Project</h3>
-        <p>
-            Short explanation of the project. What problem does it solve?
-        </p>
-        <a href="https://github.com/yourusername/project-repo">
-            View on GitHub
-        </a>
-    </div>
-</section>
+    <!-- ABOUT ME -->
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-wrapper">
+            <!-- Optional profile image -->
+            <img src="images/profile.jpg" alt="Portrait of Ziran Du" class="profile-img">
 
+            <div>
+                <p>
+                    I’m a Mechanical Engineering student at Stony Brook University (B.E., minor in Nanotechnology, GPA 3.77/4.00, 
+                    expected graduation May 2026). My work spans thermal-fluid systems, MEMS and acoustic microsystems, 
+                    quantum and optical materials, and virtual reality haptics. :contentReference[oaicite:1]{index=1}
+                </p>
+                <p>
+                    I enjoy building things that sit at the intersection of physics, hardware, and computation —
+                    from high-temperature RF resonators and coronagraph hardware to VR wearables and autonomous robots.
+                </p>
+
+                <ul class="contact-list">
+                    <li><strong>Location:</strong> Stony Brook, NY</li>
+                    <li><strong>Email:</strong> <a href="mailto:duziran2004@gmail.com">duziran2004@gmail.com</a></li>
+                    <li><strong>Phone:</strong> (518) 227–6774</li>
+                    <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/ziran-du" target="_blank">linkedin.com/in/ziran-du</a></li>
+                </ul>
+
+                <p>
+                    <strong>Selected coursework:</strong> Electromagnetic Theory, Waves & Optics, Semiconductor Devices, 
+                    Probability Theory, Statistics, Data Structures and Algorithms, Microfabrication & Thin Film Processing 
+                    of Advanced Materials. :contentReference[oaicite:2]{index=2}
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- RESEARCH EXPERIENCE (each links to its own page) -->
+    <section id="research">
+        <h2>Research Experience</h2>
+
+        <div class="card">
+            <h3>Thermal-Fluids Test Platform (Senior Design Project)</h3>
+            <p>
+                Designed and built a turbulent flow facility with aluminum and acrylic test sections, including O-ring and 
+                gasket sealing, pressure ports, and thermal interfaces. Performed pump selection, cavitation analysis, and 
+                pressure drop calculations using CAD and P&amp;ID schematics. :contentReference[oaicite:3]{index=3}
+            </p>
+            <a href="exp-thermal-fluids.html" class="btn">Read more</a>
+        </div>
+
+        <div class="card">
+            <h3>Smart Structures and Soft Electronics Laboratory</h3>
+            <p>
+                Integrated thermal and mechanical feedback into VR wearables by fabricating stretchable BN/PDMS modules and 
+                ERM vibration motors, and developing an Arduino-based control system for temperature regulation and haptics. :contentReference[oaicite:4]{index=4}
+            </p>
+            <a href="exp-smart-structures.html" class="btn">Read more</a>
+        </div>
+
+        <div class="card">
+            <h3>High Contrast Imaging Testbed – NASA JPL</h3>
+            <p>
+                Characterized deformable mirror surface deformation under temperature drift and designed a vacuum-compatible 
+                thermal control system to enable picometer-scale stability for coronagraph hardware. :contentReference[oaicite:5]{index=5}
+            </p>
+            <a href="exp-jpl-hcit.html" class="btn">Read more</a>
+        </div>
+
+        <div class="card">
+            <h3>UT RF Acoustic Microsystems Group – NSF REU</h3>
+            <p>
+                Fabricated microscale acoustic resonators for high-frequency operation up to 800&nbsp;°C using cleanroom 
+                processes, and performed COMSOL simulations to optimize device geometry and reliability. :contentReference[oaicite:6]{index=6}
+            </p>
+            <a href="exp-ut-rf-acoustics.html" class="btn">Read more</a>
+        </div>
+
+        <div class="card">
+            <h3>Quantum Optics Group – NIST SURF</h3>
+            <p>
+                Ran semiclassical simulations of the Kerr effect in rubidium vapor, identifying minimal excitation-state 
+                models that match experimental saturation curves to within ~75%. :contentReference[oaicite:7]{index=7}
+            </p>
+            <a href="exp-nist-quantum-optics.html" class="btn">Read more</a>
+        </div>
+    </section>
+
+    <!-- PROJECTS HEADER (as you asked) -->
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <div class="card">
+            <h3>Manufacturing Project – Aluminum Car</h3>
+            <p>
+                Fabricated an aluminum car chassis and wheels to tight tolerances (±0.005"), including chamfers, fillets, 
+                pockets, and drilled features, using mill, lathe, shear, and bending tools. :contentReference[oaicite:8]{index=8}
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Design Project – Kermit the Frog Toy</h3>
+            <p>
+                Built an autonomous toy frog that avoids obstacles, mimics a waddle motion, and plays music, combining 
+                mechanical design with embedded control. :contentReference[oaicite:9]{index=9}
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>CAD Project – Mars Rover</h3>
+            <p>
+                Designed a Mars Rover in CAD for rugged terrain navigation and sample collection via a 4-DOF arm, including 
+                motion studies and engineering drawings. :contentReference[oaicite:10]{index=10}
+            </p>
+        </div>
+    </section>
+
+    <!-- PUBLICATIONS -->
+    <section id="publications">
+        <h2>Publications</h2>
+        <ul>
+            <li>
+                M. Chaudhari, N. Ahmed, V. Tallavajhula, J. Campbell, Y. Wang, <strong>Z. Du</strong>, and R. Lu, 
+                “Thermal Resilience of Suspended Thin-Film Lithium Niobate Acoustic Resonators up to 550&nbsp;°C,” 
+                TRANSDUCERS 2025. :contentReference[oaicite:11]{index=11}
+            </li>
+            <li>
+                J. Campbell, T.-H. Hsu, L. Matto, N. Ahmed, M. Chaudhari, <strong>Z. Du</strong>, et al., 
+                “52 GHz Surface Acoustic Wave Resonators in Thin Film Lithium Niobate on Silicon Carbide,” 
+                IEEE TUFFC (2024). :contentReference[oaicite:12]{index=12}
+            </li>
+            <li>
+                Z. Levin, <strong>Z. Du</strong>, “Semiclassical calculation of the power saturation of the Kerr effect in Rb vapor,” 
+                JOSA B 40(12), 3190–3195 (2023). :contentReference[oaicite:13]{index=13}
+            </li>
+        </ul>
+    </section>
+
+    <!-- ACTIVITIES -->
+    <section id="activities">
+        <h2>Activities &amp; Leadership</h2>
+        <ul>
+            <li>
+                <strong>Astronomy Club at Stony Brook – Treasurer, Planetary Relations:</strong>
+                Operated Mt. Stony Brook Observatory and Celestron telescopes, managed $6000 budget, and ran 
+                social media with 1k+ followers and 600+ Discord members. :contentReference[oaicite:14]{index=14}
+            </li>
+            <li>
+                <strong>HopperHacks Hackathon:</strong>
+                Built an ML model in Python to predict PCOS likelihood from biometrics; won 2nd place in Best AI/ML Immersion Hack. :contentReference[oaicite:15]{index=15}
+            </li>
+            <li>
+                <strong>Robotics Competition:</strong>
+                Developed an Arduino-controlled, camera-equipped search-and-rescue robot with a 2-DOF sweeping arm; 
+                placed 3rd in a university-wide competition. :contentReference[oaicite:16]{index=16}
+            </li>
+        </ul>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <p>&copy; 2025 Ziran (Neinei) Du. All rights reserved.</p>
+    </footer>
 </body>
 </html>
