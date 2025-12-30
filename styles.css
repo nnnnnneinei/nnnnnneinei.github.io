@@ -5,7 +5,7 @@ body {
     margin: 0 auto;
     padding: 20px;
     line-height: 1.6;
-    background: #f7f7f9;
+    background: #ffffff;
 }
 
 /* Header and nav */
@@ -90,10 +90,13 @@ h2 {
 }
 
 .exp-logo {
-    max-width: 120px;
-    max-height: 60px;
+    max-width: 90px;
+    max-height: 45px;
+    object-fit: contain;
+    display: block;
     margin-top: 10px;
 }
+
 
 /* Projects link section */
 .btn {
