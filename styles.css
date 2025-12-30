@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    line-height: 1.6;
+    background: #f7f7f9;
+}
+
+.site-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.site-header h1 {
+    margin: 10px 0;
+}
+
+nav a {
+    margin: 0 8px;
+    text-decoration: none;
+    color: #333;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+h2 {
+    margin-top: 40px;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+}
+
+.about-wrapper {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.profile-img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ccc;
+}
+
+.contact-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 15px 20px;
+    margin: 15px 0;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 6px 12px;
+    border-radius: 4px;
+    border: 1px solid #333;
+    text-decoration: none;
+    color: #333;
+    font-size: 0.9rem;
+}
+
+.btn:hover {
+    background: #333;
+    color: #fff;
+}
+
+.site-footer {
+    text-align: center;
+    margin: 50px 0 20px;
+    font-size: 0.85rem;
+    color: #666;
+}
+
+.page-image {
+    max-width: 100%;
+    display: block;
+    margin: 10px 0 20px;
+}
+
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: 10px 0 20px;
+}
+
+.slide {
+    display: none;
+}
+
+.slide.active {
+    display: block;
+}
+
+.slide img {
+    max-width: 100%;
+    display: block;
+}
+
+.slide-btn {
+    margin: 5px 5px 0 0;
+    padding: 6px 10px;
+    cursor: pointer;
+}

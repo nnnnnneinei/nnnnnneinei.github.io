@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>High Contrast Imaging Testbed – NASA JPL | Ziran Du</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <h1>High Contrast Imaging Testbed – NASA JPL</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#gallery">Images</a>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Overview</h2>
+        <p>
+            At NASA’s Jet Propulsion Laboratory, I worked on the High Contrast Imaging Testbed to enable 
+            picometer-scale stability in spaceflight coronagraph hardware by characterizing deformable mirror (DM) 
+            surface deformation under controlled temperature drift. :contentReference[oaicite:17]{index=17}
+        </p>
+    </section>
+
+    <section>
+        <h2>What I Did</h2>
+        <ul>
+            <li>Designed a vacuum-compatible thermal control system with PID-regulated heaters and four-wire sensors.</li>
+            <li>Automated 12-hour thermal test cycles to sweep PID gain parameters.</li>
+            <li>Quantified DM surface displacement using a Twyman–Green interferometer and Zernike decomposition in Python. :contentReference[oaicite:18]{index=18}</li>
+        </ul>
+    </section>
+
+    <!-- IMAGE + SLIDESHOW EXAMPLE -->
+    <section id="gallery">
+        <h2>Gallery</h2>
+
+        <!-- Single image example -->
+        <img src="images/jpl_lab.jpg" alt="Lab setup at JPL HCIT" class="page-image">
+
+        <!-- Simple slideshow -->
+        <div class="slideshow-container">
+            <div class="slide active">
+                <img src="images/jpl_dm_setup1.jpg" alt="Deformable mirror setup 1">
+            </div>
+            <div class="slide">
+                <img src="images/jpl_dm_setup2.jpg" alt="Deformable mirror setup 2">
+            </div>
+            <div class="slide">
+                <img src="images/jpl_vacuum_chamber.jpg" alt="Vacuum chamber for thermal testing">
+            </div>
+
+            <button class="slide-btn" onclick="changeSlide(-1)">&#10094; Prev</button>
+            <button class="slide-btn" onclick="changeSlide(1)">Next &#10095;</button>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <p><a href="index.html">&larr; Back to Home</a></p>
+    </footer>
+
+    <script>
+        // Very simple slideshow logic
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.toggle('active', i === index);
+            });
+        }
+
+        function changeSlide(direction) {
+            currentSlide = (currentSlide + direction + slides.length) % slides.length;
+            showSlide(currentSlide);
+        }
+    </script>
+</body>
+</html>
