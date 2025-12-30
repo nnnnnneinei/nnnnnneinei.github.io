@@ -122,3 +122,12 @@ h2 {
     font-size: 0.85rem;
     color: #666;
 }
+
+/* force research logos to stay inside the card */
+.exp-card img {
+    max-width: 110px;
+    max-height: 55px;
+    object-fit: contain;
+    display: block;
+    margin-top: 10px;
+}
